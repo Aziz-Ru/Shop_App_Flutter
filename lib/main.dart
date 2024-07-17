@@ -13,10 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        fontFamily: 'Poppins',
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
+          fontFamily: 'Poppins',
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+          useMaterial3: true,
+          inputDecorationTheme: const InputDecorationTheme(
+              hintStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              prefixIconColor: Colors.amber)),
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
     );
